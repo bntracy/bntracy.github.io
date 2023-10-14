@@ -42,3 +42,16 @@ h1 {
   width: 10em;
   float: right;
 }
+
+.arrow_box {
+  width: 12em;
+}
+
+.arrow {
+  width: 2em;
+  float: right;
+}
+
+#employment_down_arrow, #education_down_arrow, #awards_down_arrow {
+  display: none;
+}
