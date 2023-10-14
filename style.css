@@ -1,31 +1,35 @@
 body {
-  background-color: red;
-}
-
-h1 {
-  color: white;
-  font-size: 24px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-img {
-  width: 100%;
-}
-
-p, li {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightblue;
+  font-family: Arial, Verdana, sans-serif;
+  padding-left: 2.5em;
 }
 
 .header {
-  background-color: black;
-  padding-left: 10px;
-  border: 1px solid black;
+  text-align: center;
 }
 
-.footer {
-  background: black;
-  color: white;
-  border: 1px solid black;
-  padding-left: 10px;
+h1 {
+  margin-bottom: 0px;
+}
+
+.contact_block {
+  margin-top: 0px;
+}
+
+.employment {
+  padding-left: 2.5em;
+  line-height: 1.3em;
+}
+
+.school {
+  margin-bottom: 0px;
+}
+
+.location {
+  margin-top: 0.3em;
+  font-size: 90%;
+}
+
+.education, .awards {
+  padding-left: 2.5em;
 }
