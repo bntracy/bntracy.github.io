@@ -5,6 +5,43 @@
   <meta name="viewport" content="width=device-width">
   <title>Resume: Beth Tracy</title>
   <link rel="stylesheet" href="style.css"/>
+  <script>
+    function hideEmploymentText() {
+      document.getElementById('employment_text').style.display = "none";
+      document.getElementById('employment_right_arrow').style.display = "none";
+      document.getElementById('employment_down_arrow').style.display = "block";
+    }
+    
+    function showEmploymentText() {
+      document.getElementById('employment_text').style.display = "block";
+      document.getElementById('employment_right_arrow').style.display = "block";
+      document.getElementById('employment_down_arrow').style.display = "none";
+    }
+    
+    function hideEducationText() {
+      document.getElementById('education_text').style.display = "none";
+      document.getElementById('education_right_arrow').style.display = "none";
+      document.getElementById('education_down_arrow').style.display = "block";
+    }
+    
+    function showEducationText() {
+      document.getElementById('education_text').style.display = "block";
+      document.getElementById('education_right_arrow').style.display = "block";
+      document.getElementById('education_down_arrow').style.display = "none";
+    }
+    
+    function hideAwardsText() {
+      document.getElementById('awards_text').style.display = "none";
+      document.getElementById('awards_right_arrow').style.display = "none";
+      document.getElementById('awards_down_arrow').style.display = "block";
+    }
+    
+    function showAwardsText() {
+      document.getElementById('awards_text').style.display = "block";
+      document.getElementById('awards_right_arrow').style.display = "block";
+      document.getElementById('awards_down_arrow').style.display = "none";
+    }
+  </script>
 </head>
 <body>
   <div class="header">
@@ -15,8 +52,12 @@
         White Bear Lake, MN
     </p>
   </div>
-  <h2>Employment</h2>
-  <div class="employment">
+  <div class="arrow_box">
+    <img class="arrow" id="employment_right_arrow" onclick="hideEmploymentText()" src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCroKQMLsbyt0ZgeXi6kNQ_jcNMnrtmVeVoOCED4Qqrx_bP_mNI_qBZGrUisIN0-f8DTHyvZEpEcuEravEpIBAwIU1bXQ=s2560" />
+    <img class="arrow" id="employment_down_arrow" onclick="showEmploymentText()" src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCkCXnH74hbtZLuX_UKdm4ktvtb_xNnjby-rznaNIqZSTVw8zTmEStagdL2KY3um0dk3_RRHbpMs8M60WbqyuxffcdV=s2560" />
+    <h2>Employment</h2>
+  </div>
+  <div class="employment" id="employment_text">
     <img class="rx_image" src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCyX8V6RXXUGZFkcdPizKqvzWOGrtoWh5R342FaggVl5kyr-nAaMfoCKQQomKlBtUdmocDkEVZOCxGqQyO6RxlS2Oy1lw=s2560?source=screenshot.guru"/>
     <h3>Retail Pharmacy</h3>
     <p>
@@ -45,8 +86,12 @@
       <li>Maintained inventory records and prepared returns</li>
     </ul>
   </div>
-  <h2>Education</h2>
-  <div class="education">
+  <div class="arrow_box">
+    <img class="arrow" id="education_right_arrow" onclick="hideEducationText()" src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCroKQMLsbyt0ZgeXi6kNQ_jcNMnrtmVeVoOCED4Qqrx_bP_mNI_qBZGrUisIN0-f8DTHyvZEpEcuEravEpIBAwIU1bXQ=s2560" />
+    <img class="arrow" id="education_down_arrow" onclick="showEducationText()" src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCkCXnH74hbtZLuX_UKdm4ktvtb_xNnjby-rznaNIqZSTVw8zTmEStagdL2KY3um0dk3_RRHbpMs8M60WbqyuxffcdV=s2560" />
+    <h2>Education</h2>
+  </div>
+  <div class="education" id="education_text">
     <h3 class="school">Creighton University</h3>
     <p class="location">Omaha, NE</p>
     <p>Pharm. D., May 2011</p>
@@ -54,8 +99,12 @@
     <p class="location">Madison, WI</p>
     <p>B.S. in Zoology, August 2002</p>
   </div>
-  <h2>Awards & Honors</h2>
-  <div class="awards">
+  <div class="arrow_box">
+    <img class="arrow" id="awards_right_arrow" onclick="hideAwardsText()" src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCroKQMLsbyt0ZgeXi6kNQ_jcNMnrtmVeVoOCED4Qqrx_bP_mNI_qBZGrUisIN0-f8DTHyvZEpEcuEravEpIBAwIU1bXQ=s2560" />
+    <img class="arrow" id="awards_down_arrow" onclick="showAwardsText()" src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCkCXnH74hbtZLuX_UKdm4ktvtb_xNnjby-rznaNIqZSTVw8zTmEStagdL2KY3um0dk3_RRHbpMs8M60WbqyuxffcdV=s2560" />
+    <h2>Awards</h2>
+  </div>
+  <div class="awards" id="awards_text">
     <h3>Dean's List</h3>
     <p>Creighton University</p>
     <p>Pharm. D. program</p>
