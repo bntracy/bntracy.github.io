@@ -37,3 +37,8 @@ h1 {
 .education, .awards {
   padding-left: 2.5em;
 }
+
+.rx_image {
+  width: 10em;
+  float: right;
+}
